@@ -28,5 +28,3 @@ When submitting a PR, please use the following formats depending on the type of 
   ```plaintext
   Deprecated/Archived/Removed: <package name>
   ```
-
-Please make sure your pull requests are concise and relevant to the project.

@@ -82,4 +82,9 @@ This command should typically point to `/dev/vdb`, assuming you followed the tut
 
 Shut down the virtual machine and ensure that the virtIO drive is at the top.
 ![](/assets/virt9.png)
-Then, reboot the VM. It should now boot into your new Soviet installation.
+Then, reboot the VM.
+>NOTE: It doesn't actually delete the .efi file for the installer, so on first boot you'll have two options. \
+You want the *-initrd.efi one, the other can be deleted/ignored.
+
+
+It should now boot into your new Soviet installation.
