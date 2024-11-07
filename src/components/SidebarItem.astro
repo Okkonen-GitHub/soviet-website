@@ -4,7 +4,7 @@ const { href, title, currentPath } = Astro.props;
 const isActive = currentPath === href;
 ---
 
-<li>
+<li class="ml-4">
     <a
         href={href}
         class={`block hover:text-yellow-500 transition-colors duration-300 font-bold uppercase ${isActive ? "text-yellow-500" : "text-yellow-300"}`}

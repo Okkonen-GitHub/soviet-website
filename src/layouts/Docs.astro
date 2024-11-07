@@ -17,7 +17,7 @@ const currentPath = Astro.url.pathname;
     <body class="bg-[#561818] text-white">
         <Navbar />
 
-        <Sidebar class="p-4">
+        <Sidebar class="p-4 ">
             <SidebarItem
                 href="/docs/"
                 title="Getting Started"
@@ -46,7 +46,7 @@ const currentPath = Astro.url.pathname;
         </Sidebar>
 
         <main
-            class="prose prose-slate text-white ml-96 pt-28 pb-28 px-8 max-w-5xl"
+            class="prose prose-slate text-white sm:ml-96 pt-28 pb-28 px-8 max-w-5xl"
         >
             <slot />
         </main>
