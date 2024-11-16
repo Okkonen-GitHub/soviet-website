@@ -1,6 +1,8 @@
 ---
 // Import NavBarItem component
 import NavBarItem from "./NavBarItem.astro";
+import SidebarItem from "./SidebarItem.astro";
+const currentPath = Astro.url.pathname;
 ---
 
 <nav class="w-full bg-red-900 py-4 px-6 fixed top-0 shadow-lg z-10">
@@ -54,6 +56,34 @@ import NavBarItem from "./NavBarItem.astro";
         <div class="flex flex-col space-y-2">
             <NavBarItem href="/" text="Home" />
             <NavBarItem href="/docs" text="Docs" />
+            <div class="md:hidden block">
+                
+                <SidebarItem
+                    href="/docs/"
+                    title="Getting Started"
+                    currentPath={currentPath}
+                    />
+                <SidebarItem
+                    href="/docs/installation"
+                    title="Installation"
+                    currentPath={currentPath}
+                    />
+                <SidebarItem
+                    href="/docs/CCCP"
+                    title="CCCP"
+                    currentPath={currentPath}
+                    />
+                <SidebarItem
+                    href="/docs/software"
+                    title="Software"
+                    currentPath={currentPath}
+                    />
+                <SidebarItem
+                    href="/docs/contributing"
+                    title="Contributing"
+                    currentPath={currentPath}
+                    />
+            </div>
             <NavBarItem
                 href="https://github.com/Soviet-Linux"
                 text="GitHub"
